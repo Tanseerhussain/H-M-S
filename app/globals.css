@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme to black and yellow theme */
+  --background: oklch(1 0 0); /* #ffffff */
+  --foreground: oklch(0.15 0 0); /* #000000 */
+  --card: oklch(0.98 0 0); /* #fafafa */
+  --card-foreground: oklch(0.15 0 0); /* #000000 */
+  --popover: oklch(1 0 0); /* #ffffff */
+  --popover-foreground: oklch(0.15 0 0); /* #000000 */
+  --primary: oklch(0.15 0 0); /* #000000 */
+  --primary-foreground: oklch(1 0 0); /* #ffffff */
+  --secondary: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --secondary-foreground: oklch(0.15 0 0); /* #000000 */
+  --muted: oklch(0.95 0 0); /* #f5f5f5 */
+  --muted-foreground: oklch(0.45 0 0); /* #737373 */
+  --accent: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --accent-foreground: oklch(0.15 0 0); /* #000000 */
+  --destructive: oklch(0.577 0.245 27.325); /* #ea580c */
+  --destructive-foreground: oklch(1 0 0); /* #ffffff */
+  --border: oklch(0.9 0 0); /* #e5e5e5 */
+  --input: oklch(0.98 0 0); /* #fafafa */
+  --ring: oklch(0.85 0.15 85 / 0.5); /* yellow with opacity */
+  --chart-1: oklch(0.15 0 0); /* #000000 */
+  --chart-2: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --chart-3: oklch(0.75 0.12 85); /* darker yellow */
+  --chart-4: oklch(0.45 0 0); /* #737373 */
+  --chart-5: oklch(0.25 0 0); /* #404040 */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0 0); /* #fafafa */
+  --sidebar-foreground: oklch(0.15 0 0); /* #000000 */
+  --sidebar-primary: oklch(0.15 0 0); /* #000000 */
+  --sidebar-primary-foreground: oklch(1 0 0); /* #ffffff */
+  --sidebar-accent: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --sidebar-accent-foreground: oklch(0.15 0 0); /* #000000 */
+  --sidebar-border: oklch(0.9 0 0); /* #e5e5e5 */
+  --sidebar-ring: oklch(0.85 0.15 85 / 0.5); /* yellow with opacity */
+}
+
+.dark {
+  /* Updated dark mode to maintain black and yellow theme */
+  --background: oklch(0.15 0 0); /* #000000 */
+  --foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --card: oklch(0.2 0 0); /* #333333 */
+  --card-foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --popover: oklch(0.15 0 0); /* #000000 */
+  --popover-foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --primary: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --primary-foreground: oklch(0.15 0 0); /* #000000 */
+  --secondary: oklch(0.25 0 0); /* #404040 */
+  --secondary-foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --muted: oklch(0.25 0 0); /* #404040 */
+  --muted-foreground: oklch(0.65 0 0); /* #a3a3a3 */
+  --accent: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --accent-foreground: oklch(0.15 0 0); /* #000000 */
+  --destructive: oklch(0.577 0.245 27.325); /* #ea580c */
+  --destructive-foreground: oklch(1 0 0); /* #ffffff */
+  --border: oklch(0.25 0 0); /* #404040 */
+  --input: oklch(0.25 0 0); /* #404040 */
+  --ring: oklch(0.85 0.15 85 / 0.5); /* yellow with opacity */
+  --chart-1: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --chart-2: oklch(0.75 0.12 85); /* darker yellow */
+  --chart-3: oklch(0.65 0.1 85); /* even darker yellow */
+  --chart-4: oklch(0.65 0 0); /* #a3a3a3 */
+  --chart-5: oklch(0.45 0 0); /* #737373 */
+  --sidebar: oklch(0.2 0 0); /* #333333 */
+  --sidebar-foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --sidebar-primary: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --sidebar-primary-foreground: oklch(0.15 0 0); /* #000000 */
+  --sidebar-accent: oklch(0.25 0 0); /* #404040 */
+  --sidebar-accent-foreground: oklch(0.85 0.15 85); /* #fbbf24 - yellow */
+  --sidebar-border: oklch(0.25 0 0); /* #404040 */
+  --sidebar-ring: oklch(0.85 0.15 85 / 0.5); /* yellow with opacity */
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .container-responsive {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-responsive-xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+
+  .text-responsive-base {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .grid-responsive-cards {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6;
+  }
+
+  .flex-responsive-center {
+    @apply flex flex-col sm:flex-row items-center justify-center gap-4;
+  }
+}
