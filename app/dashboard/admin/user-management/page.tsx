@@ -12,8 +12,8 @@ import { Search, User, Mail, Phone, Edit, Trash2, Plus, Shield, UserCheck } from
 const users = [
   {
     id: 1,
-    name: "John Doe",
-    email: "john.doe@college.edu",
+    name: "Ali Haider",
+    email: "Roiy.doe@college.edu",
     phone: "+91 98765 43210",
     role: "student",
     status: "active",

@@ -36,8 +36,9 @@ export function DownloadSection() {
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-12 drop-shadow-lg"> Join the Community of Smart Hostel Management </h1>
             <img
-              src="/mobile-app-mockup-showing-hms-interface-on-smartph.jpg"
+              src="/hms-mobile-app-interface-mockup-on-smartphone-show.jpg"
               alt="HMS Mobile App"
               className="mx-auto rounded-lg shadow-2xl"
             />

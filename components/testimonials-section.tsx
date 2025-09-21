@@ -3,12 +3,12 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Ali Haider",
+    name: "Zara",
     role: "Computer Science Student",
     content:
       "HMS made hostel booking so simple! I can file complaints and get help instantly. The app is intuitive and saves so much time.",
     rating: 5,
-    avatar: "/young-indian-female-student-smiling.jpg",
+    avatar: "/young-pak-female-student-smiling.jpg",
   },
   {
     name: "Haider",
@@ -16,15 +16,15 @@ const testimonials = [
     content:
       "Managing student requests has never been easier. The notification system keeps me updated, and I can approve requests on the go.",
     rating: 5,
-    avatar: "/middle-aged-indian-male-professional.jpg",
+    avatar: "/middle-aged-pak-male-professional.jpg",
   },
   {
-    name: "Dr.Roy",
+    name: "Dr.Ayesha Khan",
     role: "Hostel Administrator",
     content:
       "The analytics dashboard gives me complete oversight of all hostel operations. User management is seamless and efficient.",
     rating: 5,
-    avatar: "/professional-indian-female-administrator.jpg",
+    avatar: "/professional-pak-female-administrator.jpg",
   },
 ]
 
