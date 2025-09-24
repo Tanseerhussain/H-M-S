@@ -22,7 +22,7 @@ const hostels = [
   },
   {
     id: 2,
-    name: "Sunrise Residence",
+    name: "Gilgit-Baltistan Paradise Hostel",
     location: "South Campus",
     price: 7500,
     available: 8,
@@ -113,7 +113,7 @@ export default function HostelBooking() {
                       </div>
 
                       <div className="flex justify-between items-center">
-                        <div className="text-2xl font-bold text-indigo-600">₹{hostel.price.toLocaleString()}/month</div>
+                        <div className="text-2xl font-bold text-indigo-600"> ₨{hostel.price.toLocaleString()}/month</div>
                         <Button
                           onClick={() => setSelectedHostel(hostel.id)}
                           disabled={hostel.available === 0}
@@ -193,16 +193,16 @@ export default function HostelBooking() {
                   <div className="pt-4 border-t">
                     <div className="flex justify-between text-sm mb-2">
                       <span>Monthly Rent:</span>
-                      <span>₹{hostels.find((h) => h.id === selectedHostel)?.price.toLocaleString()}</span>
+                      <span> ₨{hostels.find((h) => h.id === selectedHostel)?.price.toLocaleString()}</span>
                     </div>
                     <div className="flex justify-between text-sm mb-2">
                       <span>Security Deposit:</span>
-                      <span>₹5,000</span>
+                      <span> ₨5,000</span>
                     </div>
                     <div className="flex justify-between font-semibold">
                       <span>Total:</span>
                       <span>
-                        ₹{((hostels.find((h) => h.id === selectedHostel)?.price || 0) + 5000).toLocaleString()}
+                         ₨{((hostels.find((h) => h.id === selectedHostel)?.price || 0) + 5000).toLocaleString()}
                       </span>
                     </div>
                   </div>

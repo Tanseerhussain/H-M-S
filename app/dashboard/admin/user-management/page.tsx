@@ -13,7 +13,7 @@ const users = [
   {
     id: 1,
     name: "Ali Haider",
-    email: "Roiy.doe@college.edu",
+    email: "Roy.doe@college.edu",
     phone: "+91 98765 43210",
     role: "student",
     status: "active",
@@ -43,7 +43,7 @@ const users = [
     status: "active",
     joinDate: "2023-08-20",
     lastLogin: "2024-01-15",
-    hostel: "Sunrise Residence",
+    hostel: "Gilgit-Baltistan Paradise Hostel",
     room: "B-205",
   },
   {
@@ -55,7 +55,7 @@ const users = [
     status: "active",
     joinDate: "2021-06-15",
     lastLogin: "2024-01-16",
-    hostel: "Sunrise Residence",
+    hostel: "Gilgit-Baltistan Paradise Hostel",
     room: "Warden Quarter",
   },
   {

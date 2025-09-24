@@ -36,11 +36,13 @@ export function DownloadSection() {
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-12 drop-shadow-lg"> Join the Community of Smart Hostel Management </h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-12 drop-shadow-lg">
+              Join the Community of Smart Hostel Management
+            </h1>
             <img
               src="/hms-mobile-app-interface-mockup-on-smartphone-show.jpg"
               alt="HMS Mobile App"
-              className="mx-auto rounded-lg shadow-2xl"
+              className="mx-auto rounded-lg shadow-2xl transition-transform duration-500 ease-in-out hover:scale-105 hover:shadow-3xl"
             />
           </div>
 
@@ -58,7 +60,7 @@ export function DownloadSection() {
               <Button
                 size="lg"
                 variant="secondary"
-                className="bg-background text-foreground hover:bg-background/90"
+                className="bg-background text-foreground hover:bg-background/90 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                 asChild
               >
                 <Link href={getDashboardLink(user.role)}>
@@ -71,7 +73,7 @@ export function DownloadSection() {
                 <Button
                   size="lg"
                   variant="secondary"
-                  className="bg-background text-foreground hover:bg-background/90"
+                  className="bg-background text-foreground hover:bg-background/90 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   asChild
                 >
                   <Link href="/auth/login">
@@ -82,7 +84,7 @@ export function DownloadSection() {
                 <Button
                   size="lg"
                   variant="secondary"
-                  className="bg-background text-foreground hover:bg-background/90"
+                  className="bg-background text-foreground hover:bg-background/90 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                   asChild
                 >
                   <Link href="/auth/register">
@@ -101,7 +103,7 @@ export function DownloadSection() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 bg-transparent"
+                  className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 bg-transparent transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
                 >
                   <Smartphone className="mr-2 h-4 w-4" />
                   Download for Android
@@ -109,7 +111,7 @@ export function DownloadSection() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 bg-transparent"
+                  className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 bg-transparent transform transition-transform duration-300 hover:scale-105 hover:shadow-md"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download for iOS
@@ -119,15 +121,15 @@ export function DownloadSection() {
           )}
 
           <div className="mt-8 flex items-center justify-center space-x-8 text-accent-foreground/60">
-            <div className="text-center">
+            <div className="text-center transform transition-transform duration-300 hover:scale-110">
               <div className="text-2xl font-bold">10K+</div>
               <div className="text-sm">Downloads</div>
             </div>
-            <div className="text-center">
+            <div className="text-center transform transition-transform duration-300 hover:scale-110">
               <div className="text-2xl font-bold">4.8★</div>
               <div className="text-sm">Rating</div>
             </div>
-            <div className="text-center">
+            <div className="text-center transform transition-transform duration-300 hover:scale-110">
               <div className="text-2xl font-bold">500+</div>
               <div className="text-sm">Hostels</div>
             </div>

@@ -23,17 +23,20 @@ const hostels = [
     contact: "+91 98765 43210",
   },
   {
-    id: 2,
-    name: "Sunrise Residence",
-    location: "South Campus",
-    totalRooms: 40,
-    occupiedRooms: 32,
-    price: 7500,
-    amenities: ["WiFi", "Mess", "Laundry"],
-    status: "active",
-    warden: "Prof. Johnson",
-    contact: "+91 87654 32109",
-  },
+  id: 2,
+  name: "Gilgit-Baltistan Paradise Hostel",
+  location: "Northern Campus",
+  totalRooms: 40,
+  occupiedRooms: 32, // means 8 available
+  price: 7500,
+  amenities: ["WiFi", "Mess", "Laundry"],
+  status: "active",
+  warden: "Prof. Hussain",
+  contact: "+91 87654 32109",
+  image: "/images/gilgit-paradise.jpg", 
+  coordinates: [74.6290, 35.9208], 
+},
+
   {
     id: 3,
     name: "Campus Heights",
@@ -221,7 +224,7 @@ export default function ManageHostels() {
                 </div>
 
                 <div>
-                  <Label htmlFor="price">Monthly Price (₹)</Label>
+                  <Label htmlFor="price">Monthly Price ( ₨)</Label>
                   <Input
                     id="price"
                     type="number"
@@ -339,7 +342,7 @@ export default function ManageHostels() {
 
                   <div className="flex justify-between items-center">
                     <span className="text-sm text-gray-600">Monthly Rent:</span>
-                    <span className="font-semibold text-indigo-600">₹{hostel.price.toLocaleString()}</span>
+                    <span className="font-semibold text-indigo-600"> ₨{hostel.price.toLocaleString()}</span>
                   </div>
 
                   <div className="flex justify-between items-center">

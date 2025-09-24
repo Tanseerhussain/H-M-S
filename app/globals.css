@@ -151,3 +151,8 @@
     @apply flex flex-col sm:flex-row items-center justify-center gap-4;
   }
 }
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
